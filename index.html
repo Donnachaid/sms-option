@@ -2,28 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SMS Notifications Consent – Brian Duncan</title>
+  <title>SMS Notifications Opt-In</title>
 </head>
-<body style="font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto;">
-  <h2>Sign Up for SMS Notifications</h2>
+<body>
+  <h2>Sign up for SMS Notifications</h2>
   <form>
     <label for="phone">Phone Number:</label><br>
-    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required><br><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
 
-<label>
-  <input type="checkbox" required>
-  I agree to receive SMS reminders and notifications from <strong>Brian Duncan</strong>.
-  Message frequency varies. Message and data rates may apply.
-  Reply STOP to opt out; reply HELP for help.
-  Consent is not a condition of purchase.
-  See our <a href="https://donnachaid.github.io/sms-option/privacy.html">Privacy Policy</a> and
-  <a href="https://donnachaid.github.io/sms-option/terms.html">Terms of Service</a>.
-</label>
+    <input type="checkbox" id="consent" name="consent" required>
+    <label for="consent">
+      By checking this box, you consent to receive SMS reminders and notifications from <b>Brian Duncan</b>.
+      Message frequency may vary. Message and data rates may apply.
+      Reply STOP to unsubscribe. Reply HELP for support.
+      See our 
+      <a href="privacy.html" target="_blank">Privacy Policy</a> and 
+      <a href="terms.html" target="_blank">Terms of Service</a>.
+    </label><br><br>
 
-<br><br>
-
-    <button type="submit">Sign Up</button>
+    <button type="submit">Submit</button>
   </form>
-
 </body>
 </html>
